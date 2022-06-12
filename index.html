@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/app/assests/favicon-32x32.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+    <title>IP Address Tracker</title>
+</head>
+<body>
+
+
+    <div class="app-container">
+        <div class="form-container">
+            <h1 class="title">IP Address Tracker</h1>
+            <form class="form-element" action="">
+                <input type="text" class="form-control" name="" id="ip-address" placeholder="Search for any IP address or domain">
+                <button id="search_btn" class="btn btn-dark">
+                    <img src="assests/icon-arrow.svg" width="12px" height="12px" alt="" srcset="">
+                </button>
+            </form>
+        </div>
+        <div class="display">
+            <div class="display-container">
+                <div class="infor-block block-separator">
+                    <h4 class="muted-title">IP ADDRESS</h4>
+                    <span id="current-ip" class="results">192.212.174.101</span>
+
+                </div>
+                <div class="infor-block block-separator">
+                    <h4 class="muted-title">LOCATION</h4>
+                    <span id="current-location" class="results">Brooklyn, NY 10001</span>
+
+                </div>
+                <div class="infor-block block-separator">
+                    <h4 class="muted-title">TIMEZONE</h4>
+                    <span id="current-timezone" class="results">UTC -05:00</span>
+
+                </div>
+                <div class="infor-block block-separator">
+                    <h4 class="muted-title">ISP</h4>
+                    <span id="current-isp" class="results">SpaceX Starlink</span>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="display-map" class="map-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
