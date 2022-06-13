@@ -82,7 +82,7 @@ h1.title {
 span.results {
     font-weight: 500;
     color: #2b2b2b;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .map-container {
@@ -90,3 +90,5 @@ span.results {
     margin-top: -70px;
     min-height: 79vh;
 }
+
+#map { height: 180px; }
