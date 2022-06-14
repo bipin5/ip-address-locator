@@ -1,4 +1,4 @@
-const my_api ='at_I9n5RrNDwdRp8b1p4DtRrUDvmm1MJ'
+const my_api ='Please_Enter_your_Secure_API'
 const bypass_cors_url = 'https://cors-anywhere.herokuapp.com/'
 const api_uri = 'https://geo.ipify.org/api/'
 let version = 'v1'
